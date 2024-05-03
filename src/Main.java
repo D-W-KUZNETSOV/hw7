@@ -9,7 +9,7 @@ public class Main {
             mount = (mount + 1);
             total = total + (total / 100);
             total = total + salary;
-            System.out.println("месяц " + mount + " сумма накоплений равна " + String.format("%.2f", total )+ " рублей");
+            System.out.println("месяц " + mount + " сумма накоплений равна " + String.format("%.2f", total) + " рублей");
         }
         //задание№2
         int a = 0;
@@ -32,16 +32,15 @@ public class Main {
         for (int year = 1; year <= 10; year++) {
             populationSize = (populationSize + yearTotal);
             System.out.println("год " + year + " численность населения составляет " + populationSize);
-
         }
         //Задание№4
         float total1 = 15000;
         int mount1 = 0;
         int summa = 12_000_000;
+        float persent1 = 7;
         while (total1 < summa) {
             mount1 = mount1 + 1;
-            float persent1 = (total1 * 7) / 100;
-            total1 = total1 + persent1;
+            total1 = total1 + ((total1 * persent1) / 100);
 
             System.out.println("месяц " + mount1 + " сумма " + String.format("%.2f", total1));
         }
@@ -57,10 +56,10 @@ public class Main {
         }
         //Задача№6
         float total3 = 15000;
-        int persent1 = 7;
+        int persent5 = 7;
         int nineYears = 108;//9лет=108месяцев
         for (int mount3 = 1; mount3 <= nineYears; mount3++) {
-            float persent3 = (total3 * persent1) / 100;
+            float persent3 = (total3 * persent5) / 100;
             total3 = total3 + persent3;
             if (mount3 % 6 == 0) {
                 System.out.println("месяц " + mount3 + " сумма " + String.format("%.2f", total3));
@@ -69,7 +68,7 @@ public class Main {
         //Задача№7
         int friDay = 3;
         int week = 7;
-        int fullMount=31;
+        int fullMount = 31;
         do {
             System.out.println("сегодня пятница " + friDay + "-ечисло.Необходимо подготовить отчёт");
             friDay += week;
@@ -83,7 +82,7 @@ public class Main {
         for (year4 = 0; year4 <= laterYear; ) {
             year4 += interval;
             if (laterYear > year4 && year4 > totalYear) {
-                System.out.println("" + year4 + "");
+                System.out.println("" + year4);
             }
         }
     }
