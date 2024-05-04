@@ -72,7 +72,7 @@ public class Main {
         do {
             System.out.println("сегодня пятница " + friDay + "-е число.Необходимо подготовить отчёт");
             friDay += week;
-        }while (friDay <= fullMount) ;
+        } while (friDay <= fullMount);
         System.out.println();
         //Задача№8
         int year4 = 0;
