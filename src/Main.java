@@ -66,14 +66,13 @@ public class Main {
             }
         }
         //Задача№7
-        int friDay = 3;
+        int friDay = 1;
         int week = 7;
         int fullMount = 31;
         do {
-            System.out.println("сегодня пятница " + friDay + "-ечисло.Необходимо подготовить отчёт");
+            System.out.println("сегодня пятница " + friDay + "-е число.Необходимо подготовить отчёт");
             friDay += week;
-        } while (friDay < fullMount);
-        System.out.println("сегодня пятница " + friDay + "-ечисло.Необходимо подготовить отчёт");
+        }while (friDay <= fullMount) ;
         //Задача№8
         int year4 = 0;
         int interval = 79;
